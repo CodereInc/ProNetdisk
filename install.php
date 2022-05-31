@@ -52,8 +52,7 @@ if (file_exists("config.php")) {
         <input class="mdui-textfield-input" type="text" id="database" name="database" value="procloud"/>
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
-        <label class="mdui-textfield-label">MySQL Prefix</label>
-        <input class="mdui-textfield-input" type="text" id="prefix" name="prefix" value="procloud_"/>
+        <input id="prefix" name="prefix" value="procloud_"style="display:none;" />
     </div>
     <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">MySQL Port</label>

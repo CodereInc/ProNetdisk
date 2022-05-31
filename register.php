@@ -100,7 +100,9 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
         $username = $_POST['username'];
         $email = $_POST['email'];
         $password = md5($_POST['password']);
-        $sql = "SELECT * FROM `$dprefix"."user` WHERE `username` = '$username'";
+        //select the $dprefix user table
+        $sql = "SELECT * FROM `procloud_user` WHERE `username`='$username'";
+        //execute the sql
         $result = $conn->query($sql);
         // if the username is already in the database
         if ($result->num_rows > 0) {
