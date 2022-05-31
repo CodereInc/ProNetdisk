@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About</title>
+        <!-- MDUI CSS -->
+        <link rel="stylesheet" href="./dist/css/mdui.min.css">
+        <!-- MDUI JS -->
+        <script src="./dist/js/mdui.min.js"></script>
+        <!-- JQUERY -->
+        <script src="./dist/js/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <!-- 导航栏 -->
+<header class="mdui-appbar">
+    <div class="mdui-toolbar mdui-color-indigo">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"mdui-drawer="{target: '#dw'}"><i class="mdui-icon material-icons">menu</i></a>
+        <a href="javascript:;" class="mdui-typo-title">About<i class="mdui-list-item-icon mdui-icon material-icons">info</i></a>
+    </div>
+</header>
+<!-- 侧边栏 -->
+<div class="mdui-drawer-close mdui-drawer" id="dw">
+    <div class="mdui-list" mdui-collapse="{accordion: true}">
+        <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+            <a href="index.php" class="mdui-list-item-content">Home</a>
+        </li>
+        <li class="mdui-collapse-item">
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">account_circle</i>
+                <a href="javascript:;" class="mdui-list-item-content">Account</a>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+            </div>
+            <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                <li class="mdui-list-item mdui-ripple"><a href="login.php" class="mdui-list-item-content">Login</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="register.php" class="mdui-list-item-content">Register</a></li>
+            </ul>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">info</i>
+            <a href="about.html" class="mdui-list-item-content">About</a>
+        </li>
+    </div>
+</div>
+<!-- mdui content -->
+<div class="mdui-container">
+    <div class="mdui-typo">
+        <h1>Q & A</h1>
+        <h2>Q:ProCloudDrive由谁开发？</h2>
+        <p>A:ProCloudDrive是一个开源的网盘系统，由<a href="https://github.com/CodereInc" target="_blank">CodereTechnology</a>开发。</p>
+        <h2>Q:为什么要使用ProCloudDrive？</h2>
+        <p>A:ProCloudDrive基于PHP开发，轻量，快速，可以更好的运行在低配置的服务器上。</p>
+        <h2>Q:为什么我会在你们的页面上同时看到ProCloudDrive和ProNetdisk呢？</h2>
+        <p>A:ProCloudDrive和ProNetdisk相同的的网盘系统，均由CodereTechnology开发。</p>
+        <h2>Q:为什么ProCloudDrive突然不能使用了？</h2>
+        <p>您可以向wojiushiyigeshabi@hotmail.com发送邮件，以获取帮助</p>
+        <h3>Q:我可以修改你的代码并且重新发布吗</h3>
+        <p>A:可以的，我们的代码遵循GPLv3许可证开源。</p>
+</div>
+</div> 
+<br>
+<br>
+<footer class="mdui-container">
+    <div class="mdui-typo">
+        <p>Copyright © 2022 ProNetdisk. All Rights Reserved.</p>
+        <p>This Project is Opensource with GPLv3 license.</p>
+        <p>Opensource Project: <a href="https://github.com/CodereInc/ProNetdisk">Github Link </a></p>
+        <p>0431-88540315</p>
+    </div>
+</footer>
+    </body>
+</html>
